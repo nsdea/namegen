@@ -9,16 +9,24 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    gen = generator.generate
+    tld = 'com'
+
+    if request.args.get('tld'):
+        tld = request.args.get('tld')
+
+        if tld == 'dont_check':
+            tld = False
+
+    gen = generator.generate_list(check_tld=tld)
     stats = math.prod([len(c) for c in generator.components()])
 
     return render_template(
         'home.html',
-        name1=gen(),
-        name2=gen(),
-        name3=gen(),
-        name4=gen(),
-        name5=gen(),
+        name1=gen[0],
+        name2=gen[1],
+        name3=gen[2],
+        name4=gen[3],
+        name5=gen[4],
         stats=stats
     )
 
