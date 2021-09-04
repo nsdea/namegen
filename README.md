@@ -51,4 +51,4 @@ Thanks to BootstrapMade for the beautiful design!
 Inspiration/Ideas:
 - https://namelix.com/
 - https://www.followchain.org/cool-usernames/
-- https://coolestwords.com/cool-usernames/
+- https://coolenionstwords.com/cool-usernames/
