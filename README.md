@@ -1,3 +1,6 @@
+⚠️ The website https://onlix.pythonanywhere.com/?tld=dont_check is down since PythonAnywhere forces you to re-activate your account every 3 months.
+***
+
 # NameGen
 Hosts a website for a modern (website/app/project/website/anything...) name generator
 
